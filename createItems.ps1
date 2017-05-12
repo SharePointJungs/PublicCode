@@ -10,5 +10,6 @@ for ($i = 1; $i -le 30; $i++)
     $newItem["Title"] = '{0} {1} erstellt {2}' -f "Element",$i,(Get-Date)
     $newItem["Auswahl"] = $auswahl[(Get-Random -Maximum 3)]
     $newItem.Update()
+    Write-Host "Item wurde erstellt"
 }
 Write-Host "Ende:" (Get-Date)
